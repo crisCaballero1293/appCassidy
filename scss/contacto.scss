@@ -1,0 +1,57 @@
+.contact {
+  max-width: 950px;
+  margin: auto;
+  .contactForm {
+    width: 350px;
+    margin: auto;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    label {
+      padding: 15px 0 15px 5px;
+      color: #fff;
+    }
+    .input {
+      height: 40px;
+      width: 100%;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.253);
+      border: 1px solid #fff;
+      border-radius: 2px;
+      padding: 15px 3px;
+      font-weight: 300;
+    }
+    .textarea {
+      font-family: "Dosis", sans-serif;
+      max-height: 100px;
+      max-width: 100%;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.253);
+      border: 1px solid #fff;
+      border-radius: 2px;
+      padding: 5px 3px;
+      font-weight: 300;
+    }
+  }
+}
+
+.contactManage {
+  max-width: 950px;
+  margin: auto;
+  padding: 100px 0;
+  .txtManage {
+    font-family: "Dosis", sans-serif;
+    width: 350px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    h4 {
+      padding-bottom: 15px;
+    }
+  }
+}

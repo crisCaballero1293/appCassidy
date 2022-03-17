@@ -1,0 +1,87 @@
+/* ----------------------------------- */
+.content {
+  max-width: 950px;
+  margin: auto;
+  text-align: justify;
+}
+.content .parrafo {
+  color: #fff;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 200;
+  font-family: "Dosis", sans-serif;
+}
+
+.integrantes {
+  color: #fff;
+  padding: 0 0 0 20px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  list-style: none;
+}
+
+.integrantes h5 {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.integrantes li {
+  padding-bottom: 5px;
+}
+
+.imgContainer {
+  margin: 50px 0;
+}
+.imgContainer img {
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #fff;
+  margin-top: 35px;
+  border-radius: 2px;
+  display: block;
+  margin: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin: auto;
+  margin-top: 30px;
+}
+.btn button {
+  width: 120px;
+  padding: 9px;
+  border: none;
+  font-family: var(--font);
+  border-radius: 2px;
+  background-color: #fff;
+}
+.btn button a {
+  width: 100%;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+.btn .spaceBtn {
+  display: inline-block;
+  width: 45px;
+}
+
+button:hover {
+  background-color: #ffde59;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 400px) {
+  .imgContainer img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btn {
+    flex-direction: column;
+  }
+}

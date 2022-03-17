@@ -1,0 +1,130 @@
+.seccionUno__gridCommerce {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "searchBar productBar"
+    " products products";
+
+  .search__Content {
+    background-color: black;
+    grid-area: searchBar;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    input {
+      width: 70%;
+      border: none;
+      border-radius: 20px;
+      height: 25px;
+      background-color: rgba(255, 255, 255, 0.253);
+      text-align: center;
+      color: #fff;
+      border: 0.5px solid #fff;
+    }
+    button {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: #fff;
+    }
+  }
+
+  .productBar {
+    background-color: black;
+    grid-area: productBar;
+    display: flex;
+    justify-content: end;
+    .productBar__Container {
+      width: 80px;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-right: 10px;
+    }
+    span {
+      display: inline-block;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+
+  .products {
+    width: 100%;
+    grid-area: products;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+
+    .container {
+      width: 100%;
+      text-align: center;
+      .img__Container {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .txt__Container {
+        color: #fff;
+        font-weight: 100;
+        padding: 20px 0;
+        font-family: "Dosis", sans-serif;
+      }
+      .btn__Container {
+        padding-bottom: 30px;
+        button {
+          padding: 10px 0;
+          width: 75%;
+          height: 35px;
+          border: none;
+          border-radius: 5px;
+          background-color: #fff;
+          font-size: 12px;
+          font-weight: 500;
+          cursor: pointer;
+          font-family: "Dosis", sans-serif;
+        }
+        button:hover {
+          background-color: #ffde59;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .seccionUno__gridCommerce {
+    width: 96%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 45px 1fr;
+    grid-template-areas:
+      "searchBar"
+      "productBar"
+      "products";
+
+    .search__Content {
+      justify-content: center;
+      input {
+        width: 45%;
+        margin-right: 12px;
+      }
+    }
+
+    .productBar {
+      justify-content: center;
+    }
+
+    .products {
+      grid-area: products;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-columns: repeat(15 1fr);
+    }
+  }
+}

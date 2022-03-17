@@ -1,0 +1,112 @@
+.seccionUno__gridCommerce {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "searchBar productBar" " products products"; }
+  .seccionUno__gridCommerce .search__Content {
+    background-color: black;
+    grid-area: searchBar;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .seccionUno__gridCommerce .search__Content input {
+      width: 70%;
+      border: none;
+      border-radius: 20px;
+      height: 25px;
+      background-color: rgba(255, 255, 255, 0.253);
+      text-align: center;
+      color: #fff;
+      border: 0.5px solid #fff; }
+    .seccionUno__gridCommerce .search__Content button {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: #fff; }
+      .search__Content button:hover{
+        color: #ffde59;
+        cursor: pointer;
+      }
+  .seccionUno__gridCommerce .productBar {
+    background-color: black;
+    grid-area: productBar;
+    display: flex;
+    justify-content: end; }
+    .seccionUno__gridCommerce .productBar .productBar__Container {
+      width: 70px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px; }
+    .seccionUno__gridCommerce .productBar button {
+      background: none;
+      border: none;
+      display: inline-block;
+      font-size: 20px;
+      color: #fff; }
+      .productBar button:hover{
+        color: #ffde59;
+        cursor: pointer;
+      }
+  .seccionUno__gridCommerce .products {
+    width: 100%;
+    grid-area: products;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 12px; }
+    .seccionUno__gridCommerce .products .container {
+      width: 100%;
+      text-align: center; }
+      .seccionUno__gridCommerce .products .container .img__Container img {
+        width: 100%;
+        height: 100%; }
+      .seccionUno__gridCommerce .products .container .txt__Container {
+        color: #fff;
+        font-weight: 100;
+        padding: 10px 0 5px;
+        font-family: "Dosis", sans-serif; }
+      .seccionUno__gridCommerce .products .container .price__Txt{
+        color: #fff;
+        font-weight: 100;
+        padding: 5px 0 15px;
+        font-family: "Dosis", sans-serif;
+      }
+      .seccionUno__gridCommerce .products .container .btn__Container {
+        padding-bottom: 30px; }
+        .seccionUno__gridCommerce .products .container .btn__Container button {
+          padding: 10px 0;
+          width: 75%;
+          height: 35px;
+          border: none;
+          border-radius: 5px;
+          background-color: #fff;
+          font-size: 12px;
+          font-weight: 500;
+          cursor: pointer;
+          font-family: "Dosis", sans-serif; }
+        .seccionUno__gridCommerce .products .container .btn__Container button:hover {
+          background-color: #ffde59; }
+
+@media only screen and (max-width: 600px) {
+  .seccionUno__gridCommerce {
+    width: 86%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 45px 1fr;
+    grid-template-areas: "searchBar" "productBar" "products"; }
+    .seccionUno__gridCommerce .search__Content {
+      justify-content: center; }
+      .seccionUno__gridCommerce .search__Content input {
+        width: 45%;
+        margin-right: 12px; }
+    .seccionUno__gridCommerce .productBar {
+      justify-content: center; }
+    .seccionUno__gridCommerce .products {
+      grid-area: products;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-columns: repeat(15 1fr); } }

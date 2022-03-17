@@ -1,0 +1,144 @@
+/*-------------ESTILOS RESPONSIVE------------------------*/
+
+@media only screen and (max-width: 600px) {
+  .grid__container {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "nav";
+  }
+
+  /*-------------ESTILOS HEADER------------------------*/
+
+  .header {
+    grid-area: header;
+    height: 500px;
+  }
+
+  .banner {
+    height: 500px;
+  }
+
+  .logo__Container {
+    top: 25%;
+  }
+
+  .logo {
+    min-width: 420px;
+  }
+
+  /*-----------------------------------------------------*/
+
+  /*-------------ESTILOS NAV------------------------*/
+
+  .nav {
+    margin-top: 20px;
+    grid-area: nav;
+    position: relative;
+    height: 220px;
+    background-color: black;
+  }
+
+  .nav li a:hover {
+    color: #ffde59;
+  }
+
+  .menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /*-----------------------------------------------------*/
+
+  /*-------------ESTILOS MAIN------------------------*/
+
+  .bodyMasc {
+    width: 100%;
+    margin-top: -60px;
+  }
+
+  .mainTxt {
+    width: 85%;
+    margin: auto;
+  }
+
+  .mainTxt h2 {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .seccionUno__gridContainer {
+    width: 100%;
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .item {
+    width: 370px;
+    height: 100%;
+  }
+
+  .itemTxt {
+    width: 300px;
+    height: 280px;
+    position: relative;
+  }
+
+  .seccionTres {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video {
+    width: 420px;
+    height: 350px;
+  }
+
+  .seccionCuatro {
+    padding: 40px 0;
+  }
+  /*----------------------------------------------------*/
+}
+
+@media only screen and (max-width: 768px) {
+  .seccionUno__gridContainer {
+    width: 100%;
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  .item {
+    margin: auto;
+    width: 370px;
+    height: 100%;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .itemTxt {
+    width: 300px;
+    height: 280px;
+    position: relative;
+  }
+}
+
+/*----------------------------------------------------*/

@@ -1,0 +1,27 @@
+{
+  "name": "repo1practsass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": 
+     "node-sass --include-path scss scss/musica.scss css/musica.css",
+     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisCaballero1293/web-cassidy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisCaballero1293/web-cassidy/issues"
+  },
+  "homepage": "https://github.com/crisCaballero1293/web-cassidy#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
