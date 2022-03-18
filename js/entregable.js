@@ -1,27 +1,30 @@
 //FUNCIÓN CONSTRUCTORA DE OBJETOS
-function Producto(id, nombre, stock, precio){
+function Producto(id, nombre, stock, precio, imgValor){
      this.id = id,
      this.nombre = nombre,
      this.stock = stock,
-     this.precio = precio
+     this.precio = precio,
+     this.img = imgValor
 }
 
-const prod1 = new Producto(1, "Playera", 20, 250);
-const prod2 = new Producto(2, "Gorra", 20, 350);
-const prod3 = new Producto(3, "Pin", 15, 200);
-const prod4 = new Producto(4, "Llavero", 10, 250);
-const prod5 = new Producto(5, "Playera", 20, 250);
-const prod6 = new Producto(6, "Gorra", 20, 350);
-const prod7 = new Producto(7, "Pin", 15, 200);
-const prod8 = new Producto(8, "Llavero", 10, 250);
-const prod9 = new Producto(9, "Playera", 20, 250);
-const prod10 = new Producto(10, "Gorra", 20, 350);
-const prod11 = new Producto(11, "Pin", 15, 200);
-const prod12 = new Producto(12, "Llavero", 10, 250);
-const prod13 = new Producto(13, "Playera", 20, 250);
-const prod14 = new Producto(14, "Gorra", 20, 350);
-const prod15 = new Producto(15, "Pin", 15, 200);
-const prod16 = new Producto(16, "Llavero", 10, 250);
+//const {imgValue} = imgProd;
+
+const prod1 = new Producto(1, "Playera", 20, 250, "../img/imgCommerce/1.png");
+const prod2 = new Producto(2, "Playera", 20, 350, "../img/imgCommerce/2.png");
+const prod3 = new Producto(3, "Playera", 15, 200, "../img/imgCommerce/3.png");
+const prod4 = new Producto(4, "Playera", 10, 250, "../img/imgCommerce/4.png");
+const prod5 = new Producto(5, "Gorra", 20, 250, "../img/imgCommerce/5.png");
+const prod6 = new Producto(6, "Gorra", 20, 350, "../img/imgCommerce/6.png");
+const prod7 = new Producto(7, "Gorra", 15, 200, "../img/imgCommerce/7.png");
+const prod8 = new Producto(8, "Gorra", 10, 250, "../img/imgCommerce/8.png");
+const prod9 = new Producto(9, "Pin", 20, 250, "../img/imgCommerce/9.png");
+const prod10 = new Producto(10, "Pin", 20, 350, "../img/imgCommerce/10.png");
+const prod11 = new Producto(11, "Pin", 15, 200, "../img/imgCommerce/11.png");
+const prod12 = new Producto(12, "Pin", 10, 250, "../img/imgCommerce/12.png");
+const prod13 = new Producto(13, "Llavero", 20, 250, "../img/imgCommerce/13.png");
+const prod14 = new Producto(14, "Llavero", 20, 350, "../img/imgCommerce/14.png");
+const prod15 = new Producto(15, "Llavero", 15, 200, "../img/imgCommerce/15.png");
+const prod16 = new Producto(16, "Llavero", 10, 250, "../img/imgCommerce/16.png");
 
 const listaProductos = [prod1, prod2, prod3, prod4, 
 prod5, prod6, prod7, prod8, prod9, prod10, prod11, prod12,
@@ -114,7 +117,7 @@ for(const productos of listaProductos) {
      let imgContainer = document.createElement("div");
      imgContainer.setAttribute("class", "img__Container");
      imgContainer.innerHTML = `<div>
-                              <img src="../img/imgCommerce/1.png" alt="imagen producto">
+                              <img src=${Producto.img}/>
                               </div>`
      container.appendChild(imgContainer);
 
